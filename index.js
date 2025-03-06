@@ -12,9 +12,12 @@ function addAnimation() {
 }
 
 // MENU RESPONSIVO //
+document.getElementById('menu-toggle').addEventListener('click', function () {
+  this.classList.toggle('active');
+});
 
 const menuToggle = document.getElementById('menu-toggle');
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.menu-b');
 
 menuToggle.addEventListener('click', () => {
   menu.classList.toggle('show');
@@ -44,13 +47,13 @@ function updateActiveDot() {
 
 // Avança para o próximo slide
 function nextSlide() {
-  currentIndex = (currentIndex + 1) % images.length;
+  currentIndex = currentIndex + ((1 % images.length) % images.length);
   updateSlidePosition();
 }
 
 // Volta para o slide anterior
 function prevSlide() {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  currentIndex = (currentIndex + 1 - images.length) % images.length;
   updateSlidePosition();
 }
 
