@@ -30,6 +30,9 @@ body{
   box-sizing: border-box;
   background-color: #FEFDF8;
 }
+body {
+  overflow-x: hidden; /* Oculta a rolagem horizontal */
+}
 a, p, li, ul, h1, h2, span {
   padding: 0;
   margin: 0;
@@ -69,6 +72,7 @@ section {
   cursor: pointer;
 
 }
+
 .nav{
   max-width: 1200px;
   margin: 0 auto;
@@ -76,6 +80,7 @@ section {
   margin-bottom: 80px;
   margin-top: 10px;
   justify-content: space-between;
+
 }
 
 .nav{
@@ -664,13 +669,12 @@ font-family: 'quattrocento';
     width: 200px;
     height: 30px;
     background-color: #E9F851;
+    border: solid 1px #262626;
     font-weight: bold;
     border-radius: 15px;
     cursor: pointer;
   }
-  .st-7 button:hover{
-    transform: scale(1.06);
-  }
+ 
 
   /*section 8 */
 
@@ -678,11 +682,13 @@ font-family: 'quattrocento';
     height: 60vh;
     margin: 0 auto;
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     background-image: url('./imagens/bg-st9.png') ;
     background-position: center;
-  }
+    background-size: cover;
+ }
   .section-8 h1{
     margin-top: 60px;
     font-family:'Bluescreens-black';
@@ -717,12 +723,9 @@ font-family: 'quattrocento';
     font-size: 34px;
     font-weight: 700;
     margin-bottom: 5px;
-
-  }
-  .ft-1 h1:hover{
-    transform: scale(1.05);
     cursor: pointer;
   }
+
   .ft-1 img{
     width: 25px;
     padding: 2px;

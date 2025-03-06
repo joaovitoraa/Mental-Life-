@@ -34,7 +34,7 @@ let autoSlideInterval;
 
 // Atualiza a posição dos slides e os indicadores ativos
 function updateSlidePosition() {
-  slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+  slides.style.transform = `translateX(${-currentIndex * 450}px)`;
   updateActiveDot();
 }
 
@@ -47,7 +47,7 @@ function updateActiveDot() {
 
 // Avança para o próximo slide
 function nextSlide() {
-  currentIndex = currentIndex + ((1 % images.length) % images.length);
+  currentIndex = (currentIndex + 1) % images.length;
   updateSlidePosition();
 }
 
