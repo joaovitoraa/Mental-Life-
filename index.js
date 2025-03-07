@@ -22,9 +22,10 @@ const menu = document.querySelector('.menu-b');
 menuToggle.addEventListener('click', () => {
   menu.classList.toggle('show');
 });
-// MENU RESPONSIVO //
+// slides //
+
 const slides = document.querySelector('.slides');
-const images = document.querySelectorAll('.slides img');
+const images = document.querySelectorAll('.slide img').length;
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 const dots = document.querySelectorAll('.dot');
@@ -34,9 +35,10 @@ let autoSlideInterval;
 
 // Atualiza a posição dos slides e os indicadores ativos
 function updateSlidePosition() {
-  slides.style.transform = `translateX(${-currentIndex * 450}px)`;
+  slides.style.transform = `translateX(-${+currentIndex * 100}%)`;
   updateActiveDot();
 }
+console.log(slides, { images });
 
 // Atualiza o indicador ativo (os "pontos")
 function updateActiveDot() {
@@ -47,13 +49,13 @@ function updateActiveDot() {
 
 // Avança para o próximo slide
 function nextSlide() {
-  currentIndex = (currentIndex + 1) % images.length;
+  currentIndex = (currentIndex + 1) % images;
   updateSlidePosition();
 }
 
 // Volta para o slide anterior
 function prevSlide() {
-  currentIndex = (currentIndex + 1 - images.length) % images.length;
+  currentIndex = (currentIndex - 1 + images) % images;
   updateSlidePosition();
 }
 

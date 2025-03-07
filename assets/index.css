@@ -169,18 +169,6 @@ flex-direction: row;
   font-weight: 100;
   z-index: 10;
 }
-
-
-
-
-
-.main-2 {
-
-}
-
-/*mai */
-
-
 /*section 2*/
 
 .section-2{
@@ -363,9 +351,10 @@ flex-direction: row;
 
 .section-4{
   background-color: #FEFDF8;
-  height: 600px;
+  height: 80vh;
   max-width: 960px;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
 .t-s4 h1{
   display: flex;
@@ -570,7 +559,7 @@ font-family: 'quattrocento';
   .slides img{
     width: 100%;
     height: auto;
-    border-radius: 25px;
+    border-radius: 150px 0 100px 0;
     margin-bottom: 15px;
    
   }
@@ -601,13 +590,16 @@ font-family: 'quattrocento';
   .slider{
     max-width:450px;
     overflow: hidden;
+  
   }
   .slides{
+    width: 100%;
     display: flex;
     transition: transform 0.5s ease;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 60px;
+ 
   }
 
   .menu-bt{
@@ -961,49 +953,56 @@ font-family: 'quattrocento';
       font-size: 64px;
       text-transform: uppercase;
     }
-    .slide.active {
-      display: block;
-    }
-    .slides img{
-      width: 100%;
-      height: auto;
+    
+  .slide.active {
+    display: block;
+  }
+  .slides img{
+    width: 100%;
+    height: auto;
+    border-radius: 150px 0 100px 0;
+    margin-bottom: 15px;
+   
+  }
+  .slides img:hover {
+    transition:all transform 0.3s ease;
+    cursor: url('./imagens/mouse.svg'), pointer;
+    transform: scale(1.00); /* Zoom leve ao passar o mouse */
+    border: none;
+  }
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .slide p {
+    font-family: 'quattrocento';
+    word-wrap: break-word;
+    width: 400px;
+  }
+  .slide span{
+    margin-top: 30px;
+    font-family:'quattrocento';
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .slider{
+    max-width:450px;
+    overflow: hidden;
   
-    }
-    .slides img:hover {
-      transition: transform 0.3s ease;
-      cursor: url('./imagens/icone.png'), pointer;
-      transform: scale(1.05); /* Zoom leve ao passar o mouse */
-    }
-    .slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .slide p {
-      font-family: 'quattrocento';
-      word-wrap: break-word;
-      width: 400px;
-    }
-    .slide span{
-      margin-top: 30px;
-      font-family:'quattrocento';
-      font-weight: bold;
-      font-size: 24px;
-    }
-  
-    .slider{
-      max-width:450px;
-      overflow: hidden;
-    }
-    .slides{
-      display: flex;
-      transition: transform 0.5s ease;
-      justify-content: center;
-      align-items: center;
-      gap: 60px;
-    }
-  
+  }
+  .slides{
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+
+  }
+
     .menu-bt{
       display: flex;
       justify-content: space-between;
@@ -1125,9 +1124,7 @@ font-family: 'quattrocento';
       padding: 2px;
       cursor: pointer;
     }
-    .ft-1 img:hover{
-      transform: scale(1.08);
-    }
+   
     .ft-2 li{
       font-family:'Bluescreens-black';
       font-size: 30px;
@@ -1136,10 +1133,7 @@ font-family: 'quattrocento';
       cursor: pointer;
     }
     .ft-2 li:hover{
-      transform: scale(1.05);
-      color: #E9F851;
-      -webkit-text-stroke-width: 0.6px;
-      -webkit-text-stroke-color: black;
+      color: #ccc;
     }
     .ft-2{
       margin: 30px;
@@ -1151,10 +1145,9 @@ font-family: 'quattrocento';
       cursor: pointer;
     }
     .ft-3 li:hover{
-      transform: scale(1.05);
-      color: #E9F851;
-      -webkit-text-stroke-width: 0.6px;
-      -webkit-text-stroke-color: black;
+
+      color: #ccc;
+    
     }
     .ft-3{
      margin: 30px;
@@ -1277,8 +1270,9 @@ font-family: 'quattrocento';
   
   }
   .menu-b button{
-    background-color: #fff;
-    color: #262626;
+    background-color: #262626;
+    color: #fff;
+    padding: 5px;
     width: 260px;
     height: 55px;
     font-weight: 700;
@@ -1694,7 +1688,7 @@ gap: 10px;
   .slide {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
   }
   .slide p {
@@ -1710,13 +1704,13 @@ gap: 10px;
   }
 
   .slider{
-    max-width:380px;
+    max-width:350px;
     overflow: hidden;
   }
   .slides{
     display: flex;
     transition: transform 0.5s ease;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -1801,57 +1795,55 @@ gap: 10px;
  padding: 0;
   }
   .footer{
-  max-width: 400px;
+  max-width: 440px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 10px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 70vh;
+  
   }
-  .ft-1 {
-    width: 400px;
+  .ft-1{
+    margin: 0;
+    padding: 0;
   }
-
-  .ft-1 h1:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-  .ft-1 img{
-    width: 40px;
-    padding: 2px;
-    cursor: pointer;
-  }
-  .ft-1 img:hover{
-    transform: scale(1.08);
-  }
-  .ft-2 li{
-    font-family:'Bluescreens-black';
-    font-size: 30px;
+  .ft-1 a{
+    font-family: "Neue";
+    font-size:44px;
     color: #262626;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 20px;
+  }
 
+ .img{
+  margin-left: 20px;
+}
+  .ft-1 img{
+    width: 45px;
+    cursor: pointer;
+  }
+
+  .ft-2 li{
+    font-family:'Neue';
+    font-size: 20px;
+    color: #262626;
+    cursor: pointer;
+    font-weight: 100;
   }
   .ft-2 li:hover{
-    transform: scale(1.05);
-    color: #E9F851;
-    -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: black;
+    color: #464646;
+
   }
 
   .ft-3 li{
-    font-family:'Bluescreens-black';
-    font-size: 30px;
+    font-family:'Neue';
+    font-size: 20px;
     color: #262626;
     cursor: pointer;
   }
   .ft-3 li:hover{
-    transform: scale(1.05);
-    color: #E9F851;
-    -webkit-text-stroke-width: 0.6px;
-    -webkit-text-stroke-color: black;
+    color: #464646;
   }
   .ft-3{
    margin: 30px;
@@ -1868,7 +1860,8 @@ gap: 10px;
   }
   .ft-4 h1{
     font-family:'Bluescreens-black';
-    font-size: 24px;
+    font-size: 30px;
+    text-align: center;
     color: #262626;
     margin-bottom: 10px;
   }
