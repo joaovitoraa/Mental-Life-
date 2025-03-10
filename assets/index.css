@@ -1076,7 +1076,7 @@ font-family: 'quattrocento';
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('./imagens/bg-st9.png') ;
+      background-image: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741361607/bg-st9_lm3qkx.png') ;
     }
     .section-8 h1{
       margin-top: 60px;
@@ -1766,7 +1766,7 @@ gap: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./imagens/bg-st9.png') ;
+    background-image: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741361607/bg-st9_lm3qkx.png') ;
     margin-bottom: 60px;
   }
   .section-8 h1{
