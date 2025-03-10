@@ -42,9 +42,6 @@ a, p, li, ul, h1, h2, span {
 img{
   max-width: 100%;
 }
-
-
-
 section {
   scroll-snap-align:auto;
   scroll-snap-type: y mandatory;
@@ -178,6 +175,7 @@ flex-direction: row;
   align-items:flex-start;
   justify-content:space-between;
   margin-bottom: 20px;
+
 
 }
 .section-2 img{
@@ -386,7 +384,7 @@ flex-direction: row;
   border-radius: 20px;
 }
 .ct-01:hover .bt-seta{
-  content: url('./imagens/Group\ 5.png');
+  content: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741613507/Group_5_nypmya.png');
 }
 .img-1 {
   display: flex;
@@ -449,7 +447,7 @@ font-family: 'quattrocento';
     border-radius: 20px;
   }
   .ct-02:hover .bt-seta{
-    content: url('./imagens/Group\ 5.png');
+    content: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741613507/Group_5_nypmya.png');
   }
 .ct-03{
   border-bottom:solid 1px #000000;
@@ -476,7 +474,7 @@ font-family: 'quattrocento';
     border-radius: 20px;
   }
   .ct-03:hover .bt-seta{
-    content: url('./imagens/Group\ 5.png');
+    content: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741613507/Group_5_nypmya.png');
   }
 
   .bt-seta{
@@ -565,7 +563,7 @@ font-family: 'quattrocento';
   }
   .slides img:hover {
     transition:all transform 0.3s ease;
-    cursor: url('./imagens/mouse.svg'), pointer;
+    cursor: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741361612/mouse_nyiy0f.svg'), pointer;
     transform: scale(1.00); /* Zoom leve ao passar o mouse */
     border: none;
   }
@@ -677,7 +675,7 @@ font-family: 'quattrocento';
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-image: url('./imagens/bg-st9.png') ;
+    background-image: url('https://res.cloudinary.com/dj3gku8z9/image/upload/v1741361607/bg-st9_lm3qkx.png') ;
     background-position: center;
     background-size: cover;
  }
@@ -1252,7 +1250,7 @@ font-family: 'quattrocento';
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
-    background-color: #010101;
+    background-color:#eee;
     color: #262626;
     font-family: 'neue';
     font-size: 26px;
@@ -1292,10 +1290,10 @@ font-family: 'quattrocento';
 
   
   .menu-b a:hover{
-    color: #ccc;
+    color: #000;
   }
   .menu-b a {
-    color: #eee;
+    color: #262626;
 
   }
   .svg {
